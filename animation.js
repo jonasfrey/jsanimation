@@ -13,13 +13,22 @@ animation.stop(); //stop the animation
 
 window.animation = {};
 animation.id = null;
-animation.fps = 30;
+animation.framespersecond = 30;
 animation.framecount = 0;
-animation.millisecondsperframe = 1000 / animation.fps;
+animation.millisecondsperframe = 1000 / animation.framespersecond;
 animation.timestampms = Date.now();
 animation.timestampms2 = Date.now();
 animation.msdifference = 0;
 animation.renderFunction = null;
+
+animation.fps = function(fps = null){
+  if(fps == null){
+    return this.framespersecond;
+  }
+  this.framespersecond = fps;
+  this.millisecondsperframe = 1000 / this.framespersecond;
+}
+
 var repeatOften = function() {
   animation.timestampms2 = Date.now();
   animation.msdifference = animation.timestampms2 - animation.timestampms;
