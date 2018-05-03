@@ -41,3 +41,5 @@ animation.stop = function() {
 animation.start = function(){
     animation.id = requestAnimationFrame(repeatOften);
 }
+
+console.log(window.animation);
