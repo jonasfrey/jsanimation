@@ -34,6 +34,7 @@ The animation.frame function is executed every frame
 If you want to overwrite it , maybe for changing some values according to the animation you can do it like so 
 ```
 animation.frame = function(){
+
     animation.renderFunction();
 
     changeValues();  //<-- your custom functions 
