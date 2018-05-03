@@ -7,7 +7,7 @@ This is a very simple, yet powerful animation object
 
 Set fps (optional)
 ```
-animation.fps = 60; //default = 30 
+animation.fps(60); //default = 30 
 ```
 Set Render function 
 ```
