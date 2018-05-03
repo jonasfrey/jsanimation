@@ -35,8 +35,8 @@ If you want to overwrite it , maybe for changing some values according to the an
 ```
 animation.frame = function(){
     animation.renderFunction();
-    //custom functions
-    changeValues();  
+
+    changeValues();  //<-- your custom functions 
 }
 ```
 
