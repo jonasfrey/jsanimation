@@ -23,5 +23,3 @@ Stop the animation
 ```
 animation.stop(); //stop the animation
 ```
-
-*/
